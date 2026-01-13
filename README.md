@@ -2,37 +2,39 @@ Navigate to website -  https://sparta-devops.signin.aws.amazon.com/console
 
 Enter login credentials
 
-# Launching an EC2 instance
+* * *
 
-\*The section below concerns the configuration setting for an EC2 instance.
+## Launching an EC2 instance
 
-## Name 
+- \*The section below concerns the configuration setting for an EC2 instance.
 
--  Follow appropriate convention. e.g. organization-name-project.
+<span style="color: rgb(255, 255, 255);">**Name**</span>
 
-## Application and OS Images
+- Follow an appropriate convention. e.g. organization-name-project title.
+
+**Application and OS Images**
 
 - Select ubuntu LTS image 64bit x86.
 
-## Instance type 
+**Instance type**
 
 - t3 micro
 
-## Select SSH key
+**Select SSH key**
 
 (see comments below)
 
-## Network
+**Network**
 
 - Name security group. e.g. organization-name-project-sg
 
-**Configure security group by selecting ==edit== option.**
+***Configure security group by selecting ==edit== option.***
 
 - SSH, source type =custom, source =0.0.0.0/0, port range= 22
 - Custom TCP, source type =custom, source =0.0.0.0/0, port range =3000
-- HTTP, source type =custom, source =0.0.0.0/0, port range =80![20ef80ae58949d53c3157ee459d902e8.png](../_resources/20ef80ae58949d53c3157ee459d902e8-4.png)
+- HTTP, source type =custom, source =0.0.0.0/0, port range =80![20ef80ae58949d53c3157ee459d902e8.png](../_resources/20ef80ae58949d53c3157ee459d902e8-5.png)
 
-## Configure storage
+**Configure storage**
 
 - 1Gb,Gp3
 
@@ -48,7 +50,7 @@ https://git-scm.com/install/
 
 1.  Open an SSH client. Ensure directory is in /.ssh folder
 2.  Navigate to connect to instance
-3.  <img src="../_resources/08bfc33ab14cc25a8526c23b68825038-4.png" alt="08bfc33ab14cc25a8526c23b68825038.png" width="367" height="235">
+3.  <img src="../_resources/08bfc33ab14cc25a8526c23b68825038-5.png" alt="08bfc33ab14cc25a8526c23b68825038.png" width="367" height="235" class="jop-noMdConv">
 4.  Select SSH connection
 5.  `run chmod 400 "se-name-key-pair.pem"`
 6.  run command
@@ -56,7 +58,7 @@ https://git-scm.com/install/
 
 * * *
 
-## Installing nginx 
+## Installing nginx
 
 Use Bash terminal (gitbash)
 
@@ -68,6 +70,8 @@ Use Bash terminal (gitbash)
 
 `sudo apt upgrade -y`
 
+* * *
+
 ## Install nginx
 
 1.  `sudo apt install nginx -y`
@@ -78,7 +82,7 @@ Use Bash terminal (gitbash)
 
 - `sudo systemctl enable nginx`
 - Test http connection- select open adress
-    1.  ![0f8ba57853f94d7c25ea3d45ea161aed.png](../_resources/0f8ba57853f94d7c25ea3d45ea161aed-4.png)
+    1.  ![0f8ba57853f94d7c25ea3d45ea161aed.png](../_resources/0f8ba57853f94d7c25ea3d45ea161aed-5.png)
 
 ## Deploying Nodejs to EC2
 
@@ -87,23 +91,33 @@ Use Bash terminal (gitbash)
 3.  Use scp to move file to EC2 instance. Ensure the EC2 public IP is correct.
 4.  `scp -i ~/.ssh/se-name-key-pair.pem ./nodejs20-se-test-app-2025.zip ubuntu@3.248.229.243:~`
 
+* * *
+
 ## Install nodejs v20
 
 1.  open bash terminal in EC2 instance
+    
 2.  `sudo bash -c "curl -fsSL https://deb.nodesource.com/setup_20.x | bash -"`
     
 3.  `sudo apt install -y nodejs`
+    
 
 Check version- `node -v`
+
+* * *
 
 ## Running nodejs app
 
 1.  Install unzip in EC2 instance
+    
 2.  `sudo apt install unzip -y`
     
 3.  Extract files
+    
 4.  `sudo unzip nodejs20-se-test-app-2025`
+    
 5.  Navigate to app folder
+    
 6.  `cd nodejs20-se-test-app-2025/app`
     
 7.  To run the nodejs app, execute the command below
@@ -111,8 +125,9 @@ Check version- `node -v`
 8.  `npm install`
     
 9.  `npm start`
+    
 
-&nbsp;
+* * *
 
 # Comments
 
