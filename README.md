@@ -40,7 +40,6 @@ Enter login credentials
 
 **With the setting above the EC2 instance can be launched.**
 
-* * *
 
 ## Connecting to EC2 via SSH
 
@@ -56,7 +55,6 @@ https://git-scm.com/install/
 6.  run command
 7.  `ssh -i "se-name-key-pair.pem" ubuntu@ec2-3-255-106-70.eu-west-1.compute.amazonaws.com`
 
-* * *
 
 ## Installing nginx
 
@@ -70,7 +68,7 @@ Use Bash terminal (gitbash)
 
 `sudo apt upgrade -y`
 
-* * *
+
 
 ## Install nginx
 
@@ -91,7 +89,7 @@ Use Bash terminal (gitbash)
 3.  Use scp to move file to EC2 instance. Ensure the EC2 public IP is correct.
 4.  `scp -i ~/.ssh/se-name-key-pair.pem ./nodejs20-se-test-app-2025.zip ubuntu@3.248.229.243:~`
 
-* * *
+
 
 ## Install nodejs v20
 
@@ -104,7 +102,6 @@ Use Bash terminal (gitbash)
 
 Check version- `node -v`
 
-* * *
 
 ## Running nodejs app
 
@@ -127,7 +124,6 @@ Check version- `node -v`
 9.  `npm start`
     
 
-* * *
 
 # Comments
 
