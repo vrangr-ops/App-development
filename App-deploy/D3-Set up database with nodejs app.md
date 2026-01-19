@@ -13,8 +13,8 @@
 https://git-scm.com/install/
 
 1.  Open an SSH client. Ensure directory is in /.ssh folder
-2.  Navigate to connect to instance
-3.  <img src="../../_resources/08bfc33ab14cc25a8526c23b68825038.png" alt="08bfc33ab14cc25a8526c23b68825038.png" width="367" height="235" class="jop-noMdConv">
+2.  Select connect to instance
+3.  ![](https://github.com/vrangr-ops/App-development/blob/main/_resources/08bfc33ab14cc25a8526c23b68825038.png)
 4.  Select SSH connection
 5.  `run chmod 400 "se-name-key-pair.pem"`
 6.  Run command
@@ -84,8 +84,8 @@ https://git-scm.com/install/
 ## Connecting to EC2 via SSH
 
 1.  Open an SSH client. Ensure directory is in /.ssh folder
-2.  Navigate to connect to instance
-3.  <img src="../../_resources/08bfc33ab14cc25a8526c23b68825038.png" alt="08bfc33ab14cc25a8526c23b68825038.png" width="367" height="235" class="jop-noMdConv">
+2.  Select connect to instance
+3.  ![](https://github.com/vrangr-ops/App-development/blob/main/_resources/08bfc33ab14cc25a8526c23b68825038.png)
 4.  Select SSH connection
 5.  `run chmod 400 "se-name-key-pair.pem"`
 6.  Run command
