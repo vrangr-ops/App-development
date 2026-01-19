@@ -3,7 +3,8 @@
 1.  Select the instance of interest.
 2.  Navigate to monitoring to view widgets.
 3.  Turn on monitoring option.
-4.  ![da0977d7639ebfd434b0f5ef07c7664e.png](App-deploy/images)
+4.  ![da0977d7639ebfd434b0f5ef07c7664e.png](_resources)
+)
 5.  Select add to dashboard using the 3 point menu.
 6.  save the widgets on dashboard.
 
