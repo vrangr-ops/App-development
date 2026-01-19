@@ -36,12 +36,14 @@
     
 10. Select an existing SNS topic - add your email address
 11. Select send notification to email
-    ![](https://github.com/vrangr-ops/App-development/blob/main/_resources/email.png)
+    - ![](https://github.com/vrangr-ops/App-development/blob/main/_resources/email.png)
+
+
 
 
 12\. Email notification should be sent should look like the example below
 
-![2b49daa61b1dd0692fff2a53058e6660.png](../../_resources/2b49daa61b1dd0692fff2a53058e6660.png)
+![](https://github.com/vrangr-ops/App-development/blob/main/_resources/2b49daa61b1dd0692fff2a53058e6660.png)
 
 &nbsp;
 
@@ -51,7 +53,7 @@
 
 &nbsp;
 
-![8354dce73d4fabc7cff0dd22dd1c8afb.png](../../_resources/8354dce73d4fabc7cff0dd22dd1c8afb.png)
+![](https://github.com/vrangr-ops/App-development/blob/main/_resources/0fd74009b06cf43d20c345c33959b18c.png)
 
 &nbsp;
 
