@@ -17,14 +17,14 @@ https://git-scm.com/install/
 3.  <img src="../../_resources/08bfc33ab14cc25a8526c23b68825038.png" alt="08bfc33ab14cc25a8526c23b68825038.png" width="367" height="235" class="jop-noMdConv">
 4.  Select SSH connection
 5.  `run chmod 400 "se-name-key-pair.pem"`
-6.  run command
+6.  Run command
 7.  `ssh -i "se-name-key-pair.pem" ubuntu@ec2-3-255-106-70.eu-west-1.compute.amazonaws.com`
 
 &nbsp;
 
 ## Install mongodb
 
-1.  sudo apt install gnupg curl -y
+1.  `sudo apt install gnupg curl -y`
     
 2.  Download mongodb
     
@@ -48,23 +48,23 @@ https://git-scm.com/install/
 
 **To allow the nodejs app to connect with the database the mongodb config file needs to be edited.**
 
-1.  `cd /etc`
+1.   `cd /etc`
     
-2.  <span style="color: rgb(0, 91, 71);">ls</span>
+2.  <span style="color: rgb(0, 91, 71);">`ls`</span>
     
-3.  <span style="color: rgb(0, 91, 71);">sudo nano mongod.conf</span>
+3. <span style="color: rgb(0, 91, 71);">`sudo nano mongod.conf`</span>
     
 4. Change the bind_Ip values to 0.0.0.0
     
 5. To confirm the edit.
-6.  <span style="color: rgb(0, 91, 71);">cat mongod.conf</span>
+6.  <span style="color: rgb(0, 91, 71);">`cat mongod.conf`</span>
     
 7. To allow permissions access control in multi-user environments.
-8.  <span style="color: rgb(0, 91, 71);">sudo chown -R mongodb:mongodb /var/lib/mongodb</span>
+8.  <span style="color: rgb(0, 91, 71);">`sudo chown -R mongodb:mongodb /var/lib/mongodb`</span>
     
 9.  `sudo chown mongodb:mongodb /tmp/mongodb-27017.sock`
     
-10.  <span style="color: rgb(0, 91, 71);">sudo service mongod restart</span>
+10.  <span style="color: rgb(0, 91, 71);">`sudo service mongod restart`</span>
     
 11.  `sudo systemctl status mongod`
     
@@ -88,7 +88,7 @@ https://git-scm.com/install/
 3.  <img src="../../_resources/08bfc33ab14cc25a8526c23b68825038.png" alt="08bfc33ab14cc25a8526c23b68825038.png" width="367" height="235" class="jop-noMdConv">
 4.  Select SSH connection
 5.  `run chmod 400 "se-name-key-pair.pem"`
-6.  run command
+6.  Run command
 7.  `ssh -i "se-name-key-pair.pem" ubuntu@ec2-3-255-106-70.eu-west-1.compute.amazonaws.com`
 
 To run nodejs script
@@ -112,15 +112,13 @@ To run nodejs script
 
 1.  `cd se-sparta-test-app /app`
     
-2.  kill any processes which may interfere
+2.  Kill any processes which may interfere
     
 3.  `pm2 kill`
     
 4.  `node seeds/seed.js`
     
-5.  &nbsp;
-    
-    `npm start app.js`
+5.  `npm start app.js`
     
 
 ## Test the nodejs app on the instance on port 3000
