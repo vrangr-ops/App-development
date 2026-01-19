@@ -1,6 +1,6 @@
 ## Load balancer
 
-1.  Go to EC2
+1.  Go to the EC2 homepage
 2.  Navigate to load balancers in the side menu
 3.  Create load balancer
 4.  Load balancer types: Select Application Load Balancer
@@ -60,4 +60,5 @@ Then select create load balancer
 ![](https://github.com/vrangr-ops/App-development/blob/main/_resources/743b0ef41d74aa4c64ab7f18ceaf2582.png)
 
 9\. To see if the Nodejs app is working and the app is polulated using the database, navigate using a web browser to the address below.
+
 10\. HTTP://IP_ADD/posts
