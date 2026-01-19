@@ -54,17 +54,19 @@ https://git-scm.com/install/
     
 3.  <span style="color: rgb(0, 91, 71);">sudo nano mongod.conf</span>
     
-4.  Change the bind_Ip values to 0.0.0.0
+4. Change the bind_Ip values to 0.0.0.0
     
-5.  <span style="color: rgb(0, 91, 71);">cat mongod.conf</span>
+5. To confirm the edit.
+6.  <span style="color: rgb(0, 91, 71);">cat mongod.conf</span>
     
-6.  <span style="color: rgb(0, 91, 71);">sudo chown -R mongodb:mongodb /var/lib/mongodb</span>
+7. To allow permissions access control in multi-user environments.
+8.  <span style="color: rgb(0, 91, 71);">sudo chown -R mongodb:mongodb /var/lib/mongodb</span>
     
-7.  `sudo chown mongodb:mongodb /tmp/mongodb-27017.sock`
+9.  `sudo chown mongodb:mongodb /tmp/mongodb-27017.sock`
     
-8.  <span style="color: rgb(0, 91, 71);">sudo service mongod restart</span>
+10.  <span style="color: rgb(0, 91, 71);">sudo service mongod restart</span>
     
-9.  `sudo systemctl status mongod`
+11.  `sudo systemctl status mongod`
     
 
 ## Deploying nodejs app
