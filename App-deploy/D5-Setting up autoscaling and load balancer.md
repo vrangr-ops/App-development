@@ -11,7 +11,7 @@
     | Scheme | Internet-facing |
     | Availability zones and subnets | Select zones in Ireland |
     | Load balancer IP address type | IPv4 |
-    | Security groups | Select the security group |
+    | Security groups | Select security group e.g. se-name-app-sg|
     | Target group | Create target group  <br><br/>e.g. se-name-app-tg |
     | Load balancer tags - *optional* | Give the balancer a searchable tag |
     
