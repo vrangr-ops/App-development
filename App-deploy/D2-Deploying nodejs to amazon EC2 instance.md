@@ -25,7 +25,7 @@ https://git-scm.com/install/
 3.  <img src="../../_resources/08bfc33ab14cc25a8526c23b68825038.png" alt="08bfc33ab14cc25a8526c23b68825038.png" width="367" height="235" class="jop-noMdConv">
 4.  Select SSH connection
 5.  `run chmod 400 "se-name-key-pair.pem"`
-6.  run command
+6.  Run command
 7.  `ssh -i "se-name-key-pair.pem" ubuntu@ec2-3-255-106-70.eu-west-1.compute.amazonaws.com`
 
 * * *
