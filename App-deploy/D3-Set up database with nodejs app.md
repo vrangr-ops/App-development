@@ -123,6 +123,7 @@ To run nodejs script
 
 ## Test the nodejs app on the instance on port 3000
 
+-Navigate using a web browser to port 3000.
 - e.g.. http://3.252.166.160:3000/posts
 
 &nbsp;
